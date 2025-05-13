@@ -1,4 +1,4 @@
-package com.bychkou.collection_box_manager.models;
+package com.bychkou.collection_box_manager.model;
 
 import jakarta.persistence.*;
 import lombok.*;

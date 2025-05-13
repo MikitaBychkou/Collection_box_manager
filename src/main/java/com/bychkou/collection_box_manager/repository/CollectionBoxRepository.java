@@ -1,6 +1,6 @@
-package com.bychkou.collection_box_manager.repositories;
+package com.bychkou.collection_box_manager.repository;
 
-import com.bychkou.collection_box_manager.models.CollectionBox;
+import com.bychkou.collection_box_manager.model.CollectionBox;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
