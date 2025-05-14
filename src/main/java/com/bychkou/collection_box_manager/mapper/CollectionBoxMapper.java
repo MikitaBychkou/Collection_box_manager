@@ -5,7 +5,7 @@ import com.bychkou.collection_box_manager.model.CollectionBox;
 
 public class CollectionBoxMapper {
 
-	public static CollectionBoxResponseDto toDto(CollectionBox box) {
+	public static CollectionBoxResponseDto entityToDto(CollectionBox box) {
 		return CollectionBoxResponseDto.builder()
 				.boxId(box.getBoxId())
 				.assigned(box.isAssigned())

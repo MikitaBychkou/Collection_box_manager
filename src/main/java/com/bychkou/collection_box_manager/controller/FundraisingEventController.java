@@ -18,8 +18,8 @@ public class FundraisingEventController {
 	private final FundraisingEventService fundraisingEventService;
 
 	@PostMapping
-	public ResponseEntity<FundraisingEventResponseDto> create(@RequestBody FundraisingEventRequestDto dto) {
-		return ResponseEntity.ok(fundraisingEventService.createFundraisingEvent(dto));
+	public ResponseEntity<FundraisingEventResponseDto> create(@RequestBody FundraisingEventRequestDto fundraisingEventRequestDto) {
+		return ResponseEntity.ok(fundraisingEventService.createFundraisingEvent(fundraisingEventRequestDto));
 	}
 
 	@GetMapping("/financial-report")

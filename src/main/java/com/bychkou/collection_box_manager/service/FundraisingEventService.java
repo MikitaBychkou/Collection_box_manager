@@ -7,6 +7,6 @@ import com.bychkou.collection_box_manager.dto.FundraisingEventResponseDto;
 import java.util.List;
 
 public interface FundraisingEventService {
-	FundraisingEventResponseDto createFundraisingEvent(FundraisingEventRequestDto dto);
+	FundraisingEventResponseDto createFundraisingEvent(FundraisingEventRequestDto fundraisingEventRequestDto);
 	List<FinancialReportItemDto> getFinancialReport();
 }

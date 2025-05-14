@@ -7,7 +7,7 @@ import com.bychkou.collection_box_manager.model.FundraisingEvent;
 
 public class FundraisingEventMapper {
 
-	public static FundraisingEvent toEntity(FundraisingEventRequestDto dto) {
+	public static FundraisingEvent dtoToEntity(FundraisingEventRequestDto dto) {
 		return FundraisingEvent.builder()
 				.name(dto.getName())
 				.currency(dto.getCurrency())
@@ -15,7 +15,7 @@ public class FundraisingEventMapper {
 				.build();
 	}
 
-	public static FundraisingEventResponseDto toDto(FundraisingEvent entity) {
+	public static FundraisingEventResponseDto entityToDto(FundraisingEvent entity) {
 		return FundraisingEventResponseDto.builder()
 				.eventId(entity.getEventId())
 				.name(entity.getName())
